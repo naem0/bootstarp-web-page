@@ -1,0 +1,63 @@
+.banner{
+    background-image: url(/img/banner.jpg);
+    background-color: rgb(196, 195, 195);
+    background-repeat: no-repeat;
+    background-blend-mode:  darken;
+}
+.my-praymary-color{
+    color: #ff545a;
+}
+.my-praymary-bg{
+    background: #ff545a;
+}
+.my-nav-link{
+    color: gray;
+    text-decoration: none;
+}
+.my-nav-link:hover{
+    color: #ff545a;
+}
+.my-nav-link:active{
+    color: #ff545a;
+}
+.my-banner-py{
+    padding-top: 180px;
+    padding-bottom: 280px;
+}
+.my-mt-90{
+    margin-top: 90px;
+}
+.banner-title{
+    font-size: 48px;
+    color: white;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+.card-hover:hover {
+    background: #ff545a !important; 
+    color: white !important;
+}
+
+
+@media (min-width: 992px) {
+    .my-my{
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    .my-py{
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+  }
+  
+@media (max-width: 991px) {
+    .my-my{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .my-py{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+  }
+  
