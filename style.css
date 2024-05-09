@@ -1,63 +1,105 @@
-.banner{
+.banner {
     background-image: url(/img/banner.jpg);
-    background-color: rgb(196, 195, 195);
+    background-color: rgb(255, 255, 255);
     background-repeat: no-repeat;
-    background-blend-mode:  darken;
+    background-blend-mode: multiply;
+    background-size: cover;
 }
-.my-praymary-color{
+p{
+    margin: 0 !important;
+}
+.my-praymary-color {
     color: #ff545a;
 }
-.my-praymary-bg{
+
+.my-praymary-bg {
     background: #ff545a;
 }
-.my-nav-link{
+
+.my-nav-link {
     color: gray;
     text-decoration: none;
 }
-.my-nav-link:hover{
+
+.my-nav-link:hover {
     color: #ff545a;
 }
-.my-nav-link:active{
+
+.my-nav-link:active {
     color: #ff545a;
 }
-.my-banner-py{
+
+.banner-py {
     padding-top: 180px;
     padding-bottom: 280px;
 }
-.my-mt-90{
-    margin-top: 90px;
-}
-.banner-title{
+
+.banner-title {
     font-size: 48px;
     color: white;
     font-weight: 700;
     margin-bottom: 50px;
 }
-.card-hover:hover {
-    background: #ff545a !important; 
+.banner-buttom-section-m{
+    margin-top: -80px;
+}
+.flex-1{
+    flex: 1;
+}
+.section-mt{
+    margin-top: 100px;
+}
+.section-pt{
+    padding: 100px;
+}
+.sub-section-mt{
+    margin-top: 80px !important;
+}
+
+.card-hover:hover  {
+    background: #ff545a !important;
     color: white !important;
+    box-shadow: 0 0 10px rgba(71, 71, 71, .4) !important;
+    transition: 500ms !important;
+}
+.card-hover:hover .card-logo-bg{
+    background-color: white !important;
+    color: #ff545a !important;
+    transition: 500ms !important;
+}
+.card-hover:hover .card-btn{
+    background-color: white !important;
+    color: #ff545a !important;
+    border: none;
+    transition: 500ms !important;
+}
+
+.manu-bar {
+    position: sticky !important;
+    top: 10px !important;
 }
 
 
 @media (min-width: 992px) {
-    .my-my{
+    .my-my {
         margin-top: 40px;
         margin-bottom: 40px;
     }
-    .my-py{
+    .my-py {
         padding-top: 40px;
         padding-bottom: 40px;
     }
-  }
-  
+    
+}
+
 @media (max-width: 991px) {
-    .my-my{
+    .my-my {
         margin-top: 20px;
         margin-bottom: 20px;
     }
-    .my-py{
+
+    .my-py {
         padding-top: 20px;
         padding-bottom: 20px;
     }
-  }
-  
+}
