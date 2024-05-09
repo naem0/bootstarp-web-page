@@ -13,7 +13,7 @@ p{
 }
 
 .my-praymary-bg {
-    background: #ff545a;
+    background: #ff545a !important;
 }
 
 .my-nav-link {
@@ -62,6 +62,7 @@ p{
     box-shadow: 0 0 10px rgba(71, 71, 71, .4) !important;
     transition: 500ms !important;
 }
+
 .card-hover:hover .card-logo-bg{
     background-color: white !important;
     color: #ff545a !important;
@@ -73,59 +74,29 @@ p{
     border: none;
     transition: 500ms !important;
 }
+.blog-card-hover:hover{
+    transition: 500ms;
+    box-shadow: 0 0 10px rgba(71, 71, 71, .4) !important;
+}
+.hover-show{
+    margin-bottom: -10px;
+    /* visibility: hidden; */
+    opacity: 0;
+}
+.blog-card-hover:hover .hover-show{
+    margin-bottom: 0;
+    transition: 500ms !important;
+    /* visibility: visible !important; */
+    opacity: 100;
+}
+.blog-card-hover:hover .blog-title{
+    color: #ff545a;
+}
 
 .manu-bar {
     position: sticky !important;
     top: 10px !important;
 }
-
-/* carosol */
-
-
-.pad {
-    padding-top:4rem;
-    width:90%;
-  }
-  
-  .g-card {
-    box-shadow: rgba(46, 61, 73, 0.15) 8px 10px 20px 0px;
-      box-sizing: border-box;
-      color: rgb(82, 92, 101);
-    border-radius: 6px 6px 6px 6px;
-    caret-color: rgb(82, 92, 101);
-      background: rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box;
-    border-top: 3px solid #02b3e4;
-  }
-  .g-card h4{
-    text-align:center;
-  }
-  .g-card img {
-    box-shadow: rgba(46, 61, 73, 0.15) 8px 10px 20px 0px;
-    border-radius: 50% 50% 50% 50%;
-    margin: -30px auto auto auto;
-    display:block;
-  }
-  .carousel .carousel-item>img {
-      width: initial;
-  }
-  .carousel .carousel-item>p {
-    padding:1rem;
-    text-align-last:center;
-  }
-  .carousel {
-    height:100vh;
-  }
-  .carousel .carousel-item {
-    height:initial;
-  }
-  .carousel .carousel-item {
-    width:40%;
-  }
-  .pad.hide-on-med-and-up .g-card{
-    margin-top:1rem;
-    margin-bottom:2rem;
-  }
-
 
 @media (min-width: 992px) {
     .my-my {
@@ -136,7 +107,6 @@ p{
         padding-top: 40px;
         padding-bottom: 40px;
     }
-    
 }
 
 @media (max-width: 991px) {
