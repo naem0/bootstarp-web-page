@@ -1,6 +1,6 @@
 .banner {
     background-image: url(/img/banner.jpg);
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(150, 149, 149);
     background-repeat: no-repeat;
     background-blend-mode: multiply;
     background-size: cover;
@@ -78,6 +78,53 @@ p{
     position: sticky !important;
     top: 10px !important;
 }
+
+/* carosol */
+
+
+.pad {
+    padding-top:4rem;
+    width:90%;
+  }
+  
+  .g-card {
+    box-shadow: rgba(46, 61, 73, 0.15) 8px 10px 20px 0px;
+      box-sizing: border-box;
+      color: rgb(82, 92, 101);
+    border-radius: 6px 6px 6px 6px;
+    caret-color: rgb(82, 92, 101);
+      background: rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box;
+    border-top: 3px solid #02b3e4;
+  }
+  .g-card h4{
+    text-align:center;
+  }
+  .g-card img {
+    box-shadow: rgba(46, 61, 73, 0.15) 8px 10px 20px 0px;
+    border-radius: 50% 50% 50% 50%;
+    margin: -30px auto auto auto;
+    display:block;
+  }
+  .carousel .carousel-item>img {
+      width: initial;
+  }
+  .carousel .carousel-item>p {
+    padding:1rem;
+    text-align-last:center;
+  }
+  .carousel {
+    height:100vh;
+  }
+  .carousel .carousel-item {
+    height:initial;
+  }
+  .carousel .carousel-item {
+    width:40%;
+  }
+  .pad.hide-on-med-and-up .g-card{
+    margin-top:1rem;
+    margin-bottom:2rem;
+  }
 
 
 @media (min-width: 992px) {
