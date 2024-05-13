@@ -5,8 +5,9 @@
     background-blend-mode: multiply;
     background-size: cover;
 }
-p{
+p, a{
     margin: 0 !important;
+    padding: 0;
 }
 .my-praymary-color {
     color: #ff545a;
@@ -97,6 +98,13 @@ p{
     position: sticky !important;
     top: 10px !important;
 }
+
+/* carosol */
+
+
+
+
+
 
 @media (min-width: 992px) {
     .my-my {
