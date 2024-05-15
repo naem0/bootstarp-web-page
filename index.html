@@ -8,12 +8,15 @@
   <link rel="stylesheet" href="style.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- ===== Link Swiper's CSS ===== -->
+  <link rel="stylesheet" href="/node_modules/swiper/swiper-bundle.min.css" />
   <!-- icon  -->
   <script src="https://kit.fontawesome.com/0b8069749d.js" crossorigin="anonymous"></script>
 </head>
 </head>
 
-<body class="text-secondary ">
+<body class="text-secondary">
   <header>
     <!-- Top Nav -->
     <section>
@@ -43,7 +46,7 @@
       </div>
     </section>
     <!-- Main nav  -->
-    <nav class="navbar navbar-expand-lg bg-white manu-bar position-sticky top-0">
+    <nav class="navbar navbar-expand-lg bg-white manu-bar position-sticky top-0 z-3 ">
       <div class="container-fluid py-3">
         <a class="navbar-brand fw-bold" href="/">List<samp class="my-praymary-color">Race</samp></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -139,11 +142,11 @@
       </div>
     </section>
     <section class="section-mt work-section container">
-      <div class="text-center text-primary-emphasis">
+      <div class="text-center section-deader text-primary-emphasis">
         <h3 class="mb-4">HOW IT WORKS</h3>
         <p>Learn More about how our website works</p>
       </div>
-      <div class="row row-cols-1 row-cols-md-3 sub-section-mt">
+      <div class="row row-cols-1 row-cols-md-3 sub-section-mt work-section-main">
         <div class="col">
           <div
             class="card-hover h-100 d-flex flex-column align-items-center py-5 px-4 bg-white shadow-sm rounded text-center text-body-secondary">
@@ -179,13 +182,13 @@
         </div>
       </div>
     </section>
-    <section class="section-mt bg-light section-pt">
-      <div class="container">
-        <div class="text-center text-primary-emphasis">
-          <h3 class="mb-4">HOW IT WORKS</h3>
-          <p>Learn More about how our website works</p>
+    <section class="section-mt explore-section bg-light section-pt">
+      <div class="container explore-continar">
+        <div class="text-center text-primary-emphasis sectio-hader">
+          <h3 class="mb-4">EXPLORE</h3>
+          <p>Explore New place, food, culture around the world and many more</p>
         </div>
-        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 sub-section-mt">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 sub-section-mt explore section-main">
           <div class="col">
             <div class="border rounded shadow-sm h-100 blog-card-hover">
               <div class="position-relative">
@@ -318,16 +321,148 @@
         </div>
       </div>
     </section>
-    <section class="container section-mt">
-      <div class="text-center text-primary-emphasis">
-        <h3 class="mb-4">HOW IT WORKS</h3>
-        <p>Learn More about how our website works</p>
-      </div>
-    </section>
-    <section class="section-mt section-pt">
+    <section class="section-mt">
       <div class="container">
         <div class="text-center text-primary-emphasis">
           <h3 class="mb-4">HOW IT WORKS</h3>
+          <p>Learn More about how our website works</p>
+        </div>
+        <div class="swiper mySwiper sub-section-mt">
+
+          <div class="swiper-wrapper">
+
+            <div class="card swiper-slide">
+              <div class=" d-flex gap-4 align-items-center mb-4 ">
+                <div class="card__image my-auto ">
+                  <img src="/img/person.png" alt="card image">
+                </div>
+                <div class="">
+                  <p class="card__title">Mobile Designer</p>
+                  <p class="card__name">Kelsey West</p>
+                  <p class="text-warning">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </p>
+                </div>
+              </div>
+
+              <div class="card__content">
+                <p class="card__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit veritatis labore
+                  provident non tempora odio est sunt, ipsum</p>
+                <button class="card__btn">View More</button>
+              </div>
+            </div>
+
+            <div class="card swiper-slide">
+              <div class=" d-flex gap-4 align-items-center mb-4 ">
+                <div class="card__image my-auto ">
+                  <img src="/img/person.png" alt="card image">
+                </div>
+                <div class="">
+                  <p class="card__title">Mobile Designer</p>
+                  <p class="card__name">Kelsey West</p>
+                  <p class="text-warning">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </p>
+                </div>
+              </div>
+
+              <div class="card__content">
+                <p class="card__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit veritatis labore
+                  provident non tempora odio est sunt, ipsum</p>
+                <button class="card__btn">View More</button>
+              </div>
+            </div>
+
+            <div class="card swiper-slide">
+              <div class=" d-flex gap-4 align-items-center mb-4 ">
+                <div class="card__image my-auto ">
+                  <img src="/img/person.png" alt="card image">
+                </div>
+                <div class="">
+                  <p class="card__title">Mobile Designer</p>
+                  <p class="card__name">Kelsey West</p>
+                  <p class="text-warning">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </p>
+                </div>
+              </div>
+
+              <div class="card__content">
+                <p class="card__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit veritatis labore
+                  provident non tempora odio est sunt, ipsum</p>
+                <button class="card__btn">View More</button>
+              </div>
+            </div>
+
+            <div class="card swiper-slide">
+              <div class=" d-flex gap-4 align-items-center mb-4 ">
+                <div class="card__image my-auto ">
+                  <img src="/img/person.png" alt="card image">
+                </div>
+                <div class="">
+                  <p class="card__title">Mobile Designer</p>
+                  <p class="card__name">Kelsey West</p>
+                  <p class="text-warning">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </p>
+                </div>
+              </div>
+
+              <div class="card__content">
+                <p class="card__text text-start ">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit
+                  veritatis labore
+                  provident non tempora odio est sunt, ipsum</p>
+                <button class="card__btn">View More</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="count-section section-mt">
+      <div class="container sub-section-mt py-5 sub-section-mt ">
+        <div class="row row-cols-2 row-cols-md-4 my-5 g-5">
+          <div class="col text-white text-center">
+            <h1><span id="num1">90</span>k +</h1>
+            <h3>Listings</h3>
+        </div>
+        <div class="col text-white text-center">
+            <h1><span id="num2">40</span>k+</h1>
+            <h3>Listing Categories</h3>
+        </div>
+        <div class="col text-white text-center">
+            <h1><span id="num3">65</span>k+</h1>
+            <h3>Visitors</h3>
+        </div>
+        <div class="col text-white text-center">
+            <h1><span id="num4">50</span>k+</h1>
+            <h3>Happy Clients</h3>
+        </div>
+        </div>
+        
+      </div>
+    </div>
+
+    <section class="section-mt">
+      <div class="container">
+        <div class="text-center text-primary-emphasis">
+          <h3 class="mb-4">NEWS AND ARTICLES</h3>
           <p>Learn More about how our website works</p>
         </div>
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 sub-section-mt">
@@ -345,7 +480,8 @@
                   </p>
                   <p class="">March 2045</p>
                 </div>
-                <p class="lh-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incid ut labore et dolore magna aliqua....</p>
+                <p class="lh-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incid
+                  ut labore et dolore magna aliqua....</p>
               </div>
             </div>
           </div>
@@ -363,7 +499,8 @@
                   </p>
                   <p class="">March 2045</p>
                 </div>
-                <p class="lh-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incid ut labore et dolore magna aliqua....</p>
+                <p class="lh-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incid
+                  ut labore et dolore magna aliqua....</p>
               </div>
             </div>
           </div>
@@ -381,21 +518,24 @@
                   </p>
                   <p class="">March 2045</p>
                 </div>
-                <p class="lh-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incid ut labore et dolore magna aliqua....</p>
+                <p class="lh-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incid
+                  ut labore et dolore magna aliqua....</p>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
+
     <section class="section-mt bg-light section-pt">
       <div class="container">
         <div class="text-center text-primary-emphasis">
           <h3 class="mb-4">HOW IT WORKS</h3>
           <p>Learn More about how our website works</p>
         </div>
-        <div class="input-group mb-3 mt-5 w-50 mx-auto blog-card-hover">
-          <input type="text" class="form-control form-control-lg py-3 " placeholder="Enter your email here" aria-label="Recipient's username" aria-describedby="button-addon2">
+        <div class="input-group mb-3 mt-5 input-w mx-auto blog-card-hover">
+          <input type="text" class="form-control form-control-lg py-3 " placeholder="Enter your email here"
+            aria-label="Recipient's username" aria-describedby="button-addon2">
           <button class="btn text-white  my-praymary-bg" type="button" id="button-addon2">Creat Account</button>
         </div>
       </div>
@@ -406,8 +546,9 @@
       <nav class="navbar navbar-expand-lg bg-white footer-nav position-sticky top-0 border-bottom ">
         <div class="container-fluid py-3">
           <a class="navbar-brand fw-bold" href="/">List<samp class="my-praymary-color">Race</samp></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -434,23 +575,81 @@
           </div>
         </div>
       </nav>
-      <div class="my-5 mx-4  d-flex justify-content-between text-secondary">
+      <div class="my-5 mx-4  d-flex flex-column flex-md-row gap-4 justify-content-between text-secondary">
         <p>© Copyright. Designed And Developed By Themesine</p>
         <div class="d-flex gap-4 align-items-center text-black ">
           <a class="text-secondary" href="tel:+1 (222) 777 8888"><i class="fa-solid fa-phone"></i> 1 (222) 777 8888</a>
-          <a class="text-secondary bg-secondary-subtle px-3 py-2  rounded-circle" href=""><i class="fa-brands fa-facebook-f"></i></a>
-          <a class="text-secondary bg-secondary-subtle p-2 rounded-circle" href=""><i class="fa-brands fa-twitter"></i></a>
-          <a class="text-secondary bg-secondary-subtle p-2 rounded-circle" href=""><i class="fa-brands fa-google-plus-g"></i></a>
+          <a class="text-secondary bg-secondary-subtle px-3 py-2  rounded-circle" href=""><i
+              class="fa-brands fa-facebook-f"></i></a>
+          <a class="text-secondary bg-secondary-subtle p-2 rounded-circle" href=""><i
+              class="fa-brands fa-twitter"></i></a>
+          <a class="text-secondary bg-secondary-subtle p-2 rounded-circle" href=""><i
+              class="fa-brands fa-google-plus-g"></i></a>
         </div>
       </div>
     </div>
   </footer>
+  
+  <!-- Swiper JS -->
+  <script src="/node_modules/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
   <script>
-    
+    var swiper = new Swiper(".mySwiper", {
+      effect: "coverflow",
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: "auto",
+      loop: true,
+      coverflowEffect: {
+        rotate: 0,
+        stretch: 0,
+        depth: 200,
+        modifier: 1,
+        slideShadows: false,
+        clickable: true,
+      },
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
   </script>
+      <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
+      <script src="res/countMe/countMe.min.js"></script>
+      <script>
+        window.onload = ()=>{
+            // $(selector).countMe(delay,speed)
+            $("#num1").countMe(40,65);
+            $("#num2").countMe(30, 30);
+            $("#num3").countMe(40, 50);
+            $("#num4").countMe(100,200);
+         }
+        </script>
+        <script type="text/javascript">
+
+          var _gaq = _gaq || [];
+          _gaq.push(['_setAccount', 'UA-36251023-1']);
+          _gaq.push(['_setDomainName', 'jqueryscript.net']);
+          _gaq.push(['_trackPageview']);
+        
+          (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+          })();
+        
+        </script>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
 </body>
 
