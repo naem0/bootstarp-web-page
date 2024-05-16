@@ -56,15 +56,12 @@ p, a{
 .flex-1{
     flex: 1;
 }
-.section-mt{
-    margin-top: 100px;
-}
 .section-pt{
     padding-top: 100px;
     padding-bottom: 100px;
 }
-.sub-section-mt{
-    margin-top: 80px !important;
+.sub-section-pt{
+    padding-top: 80px !important;
 }
 
 .card-hover:hover  {
@@ -124,10 +121,10 @@ p, a{
   }
   
   .card{
-    width: 40% !important;
+    width: 34% !important;
     background-color: #fff;
     border-radius: 2em;
-    box-shadow: 0 0 2em rgba(0, 0, 0, .2);
+    box-shadow: 0 0 8px rgba(0, 0, 0, .2);
     padding: 2em 2em;
   
     display: flex;
@@ -219,7 +216,24 @@ p, a{
         width: 100% !important;
     }
     .my-py {
-        padding-top: 20px;
-        padding-bottom: 20px;
+        padding-top: 16px;
+        padding-bottom: 16px;
     }
+    .section-pt{
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .sub-section-pt{
+        padding-top: 30px !important;
+    }
+    .banner-title {
+        font-size: 28px;
+        font-weight: 700;
+        margin-bottom: 30px;
+    }
+
+.banner-py {
+    padding-top: 80px;
+    padding-bottom: 120px;
+}
 }
