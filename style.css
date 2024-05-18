@@ -5,7 +5,8 @@
     background-blend-mode: multiply;
     background-size: cover;
 }
-.count-section{
+
+.count-section {
     background-image: url(/img/banner.jpg);
     background-color: rgb(53, 53, 53);
     background-repeat: no-repeat;
@@ -14,10 +15,13 @@
     background-position: inherit;
     background-attachment: fixed;
 }
-p, a{
+
+p,
+a {
     margin: 0 !important;
     padding: 0;
 }
+
 .my-praymary-color {
     color: #ff545a;
 }
@@ -50,54 +54,63 @@ p, a{
     font-weight: 700;
     margin-bottom: 50px;
 }
-.banner-buttom-section-m{
+
+.banner-buttom-section-m {
     margin-top: -80px;
 }
-.flex-1{
+
+.flex-1 {
     flex: 1;
 }
-.section-pt{
+
+.section-pt {
     padding-top: 100px;
     padding-bottom: 100px;
 }
-.sub-section-pt{
+
+.sub-section-pt {
     padding-top: 80px !important;
 }
 
-.card-hover:hover  {
+.card-hover:hover {
     background: #ff545a !important;
     color: white !important;
     box-shadow: 0 0 10px rgba(71, 71, 71, .4) !important;
     transition: 500ms !important;
 }
 
-.card-hover:hover .card-logo-bg{
+.card-hover:hover .card-logo-bg {
     background-color: white !important;
     color: #ff545a !important;
     transition: 500ms !important;
 }
-.card-hover:hover .card-btn{
+
+.card-hover:hover .card-btn {
     background-color: white !important;
     color: #ff545a !important;
     border: none;
     transition: 500ms !important;
 }
-.blog-card-hover:hover{
+
+.blog-card-hover:hover {
     transition: 500ms;
     box-shadow: 0 0 10px rgba(71, 71, 71, .4) !important;
 }
-.hover-show{
+
+.hover-show {
     margin-bottom: -10px;
     /* visibility: hidden; */
     opacity: 0;
 }
-.blog-card-hover:hover .hover-show{
+
+.blog-card-hover:hover .hover-show {
     margin-bottom: 0;
     transition: 500ms !important;
     /* visibility: visible !important; */
     opacity: 100;
 }
-.blog-card-hover:hover .blog-title{
+
+.blog-card-hover:hover .blog-title {
     color: #ff545a;
 }
 
@@ -105,77 +118,96 @@ p, a{
     position: sticky !important;
     top: 10px !important;
 }
-.input-w{
+
+.input-w {
     width: 50% !important;
 }
 
-/* carosol */
-.swiper{
-    width: 100%;
+.hide-mobile-nav {
+    right: -100%;
+    transition: 500ms;
+    height: 100vh;
+    background: white;
+    top: 0;
+    z-index: 10;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.show-mobile-nav.hide-mobile-nav {
+    right: 0;
+    transition: 500ms;
+    opacity: 1;
+    visibility: visible;
+}
+input[type=text]:focus {
+    box-shadow: none;
+    border: 1px solid rgb(223, 223, 223);
   }
-  
-  .swiper-wrapper{
+
+/* carosol */
+.swiper {
     width: 100%;
+}
+
+.swiper-wrapper {
     display: flex;
     align-items: center;
-  }
-  
-  .card{
-    width: 34% !important;
+    padding-bottom: 6px;
+}
+
+.card {
     background-color: #fff;
     border-radius: 2em;
     box-shadow: 0 0 8px rgba(0, 0, 0, .2);
     padding: 2em 2em;
-  
     display: flex;
     align-items: center;
     flex-direction: column;
-  
-    margin: 0 2em;
-  }
-  
-  .swiper-slide:not(.swiper-slide-active){
+}
+
+.swiper-slide:not(.swiper-slide-active) {
     filter: blur(1px);
-  }
-  
-  .card__image{
+}
+
+.card__image {
     border-radius: 50%;
     border: 5px solid var(--color);
     padding: 3px;
     margin-bottom: 2em;
-  }
-  
-  .card__image img{
+}
+
+.card__image img {
     width: 100%;
     height: 100%;
     border-radius: 50%;
     object-fit: cover;
-  }
-  
-  .card__content{
+}
+
+.card__content {
     display: flex;
     align-items: center;
     flex-direction: column;
-  }
-  
-  .card__title{
+}
+
+.card__title {
     font-size: 1.3rem;
     font-weight: 500;
     position: relative;
     top: .2em;
-  }
-  
-  .card__name{
+}
+
+.card__name {
     color: var(--color);
-  }
-  
-  .card__text{
+}
+
+.card__text {
     font-size: 1rem;
     margin: 1em 0;
     text-align: start;
-  }
-  
-  .card__btn{
+}
+
+.card__btn {
     background-color: var(--color);
     color: #fff;
     font-size: 1rem;
@@ -186,7 +218,7 @@ p, a{
     border-radius: .5em;
     margin-top: .5em;
     cursor: pointer;
-  }
+}
 
 
 
@@ -197,11 +229,12 @@ p, a{
         margin-top: 40px;
         margin-bottom: 40px;
     }
+
     .my-py {
         padding-top: 40px;
         padding-bottom: 40px;
     }
-    
+
 }
 
 @media (max-width: 991px) {
@@ -209,31 +242,37 @@ p, a{
         margin-top: 20px;
         margin-bottom: 20px;
     }
-    .card{
+
+    .card {
         width: 100% !important;
     }
-    .input-w{
+
+    .input-w {
         width: 100% !important;
     }
+
     .my-py {
         padding-top: 16px;
         padding-bottom: 16px;
     }
-    .section-pt{
+
+    .section-pt {
         padding-top: 40px;
         padding-bottom: 40px;
     }
-    .sub-section-pt{
+
+    .sub-section-pt {
         padding-top: 30px !important;
     }
+
     .banner-title {
         font-size: 28px;
         font-weight: 700;
         margin-bottom: 30px;
     }
 
-.banner-py {
-    padding-top: 80px;
-    padding-bottom: 120px;
-}
+    .banner-py {
+        padding-top: 80px;
+        padding-bottom: 120px;
+    }
 }
